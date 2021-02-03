@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* resets */
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {margin: 0;padding: 0;font-weight: normal;}
+ol, ul {list-style: none;}
+img {max-width: 100%;height: auto;}
+
+:root {
+  --peca : 100px;
+  --colorPlayer1 : #ff9900;
+  --colorPlayer2 : #09ff00;
+}
+
+a {text-decoration: none;}
+body{
+  background: #000000;
+  color: white;
+  height: 100vh;
+  font-family: 'Press Start 2P', cursive;
+  font-size: .625em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-content: center;
+}
+
+/* .tabuleiro{margin: 0 auto;} */
+.tabuleiro{
+  position: relative;
+  width: 620px;
+  height: 500px;
+  background-image: url("tabuleiro.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 500;
+}
+
+.peca {
+  border: none; color: white;
+  width: var(--peca);
+  height: var(--peca);
+  font-size: 14em;
+  font-family: 'Indie Flower', cursive;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+#a1{position: absolute; top:  65px; left: 70px;}
+#a2{position: absolute; top:  65px; left:250px;}
+#a3{position: absolute; top:  65px; left:440px;}
+
+#b1{position: absolute; top: 215px; left: 70px;}
+#b2{position: absolute; top: 215px; left:250px;}
+#b3{position: absolute; top: 215px; left:440px;}
+
+#c1{position: absolute; top: 375px; left: 70px;}
+#c2{position: absolute; top: 375px; left:250px;}
+#c3{position: absolute; top: 375px; left:440px;}
+
+.msg {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 2.4em;
+  line-height: 20px;
+  color: #059400;
+}
+
+#reload{
+  position:absolute;
+  bottom: 50px;
+  left: 48%;
+  padding: 10px 15px;
+  background-color: chartreuse;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+  display: none;
+}

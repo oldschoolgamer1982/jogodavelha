@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="tabuleiro">
+    <a onclick="marcarJogada('a1')" id="a1" class="peca"></a>
+    <a onclick="marcarJogada('a2')" id="a2" class="peca"></a>
+    <a onclick="marcarJogada('a3')" id="a3" class="peca"></a>
+    <a onclick="marcarJogada('b1')" id="b1" class="peca"></a>
+    <a onclick="marcarJogada('b2')" id="b2" class="peca"></a>
+    <a onclick="marcarJogada('b3')" id="b3" class="peca"></a>
+    <a onclick="marcarJogada('c1')" id="c1" class="peca"></a>
+    <a onclick="marcarJogada('c2')" id="c2" class="peca"></a>
+    <a onclick="marcarJogada('c3')" id="c3" class="peca"></a>
+  </div>
+
+  <div class="msg" id="linha1"></div>
+  <div class="msg" id="linha2"></div>
+
+  <input type="button" value="START" onClick="document.location.reload(true)" id="reload">
+
+
+<script src="jogo.js"></script>
+
+</body>
+</html>
