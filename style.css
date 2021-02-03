@@ -10,8 +10,6 @@ img {max-width: 100%;height: auto;}
 
 :root {
   --peca : 100px;
-  --colorPlayer1 : #ff9900;
-  --colorPlayer2 : #09ff00;
 }
 
 a {text-decoration: none;}
@@ -72,7 +70,7 @@ body{
 #reload{
   position:absolute;
   bottom: 50px;
-  left: 48%;
+  left: 50px;
   padding: 10px 15px;
   background-color: chartreuse;
   border: none;
