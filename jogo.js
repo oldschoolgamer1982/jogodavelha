@@ -97,18 +97,11 @@ function marcarJogada(p){
       }, 1000);
     }
   }
-
-  function travarTabuleiro() {
-    var tab = document.querySelectorAll('.peca')
-    for (e of tab){
-        e.onclick = function(){ return false }
-    }
-  }
 }
 
 function travarTabuleiro() {
   var tab = document.querySelectorAll('.peca')
   for (e of tab){
-    e.onclick = function(){ return false }
+      e.onclick = function(){ return false }
   }
 }
