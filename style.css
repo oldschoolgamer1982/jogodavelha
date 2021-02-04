@@ -64,16 +64,17 @@ body{
   text-align: center;
   font-size: 2.4em;
   line-height: 20px;
-  color: #059400;
+  color: chartreuse;
 }
 
 #reload{
-  position:absolute;
-  bottom: 50px;
-  left: 50px;
-  padding: 10px 15px;
-  background-color: chartreuse;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: chartreuse;
   border: none;
   font-family: 'Press Start 2P', cursive;
   display: none;
+  z-index: 500;
 }

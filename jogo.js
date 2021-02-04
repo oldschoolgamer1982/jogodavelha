@@ -93,8 +93,16 @@ function marcarJogada(p){
         }
       }
       setTimeout(function(){ 
-        document.getElementById("reload").style.display = "block"
-      }, 1000);
+        var newPlay = document.getElementById("reload")
+        newPlay.style.display = "block"
+        setInterval(() => {
+          newPlay.value = ""
+          setTimeout(function(){ 
+            newPlay.value = "CLIQUE PARA JOGAR NOVAMENTE"
+          }, 500);
+          console.log(newPlay)
+        }, 3000)
+      }, 1000)
     }
   }
 }
