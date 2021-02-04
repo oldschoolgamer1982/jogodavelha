@@ -100,7 +100,6 @@ function marcarJogada(p){
           setTimeout(function(){ 
             newPlay.value = "CLIQUE PARA JOGAR NOVAMENTE"
           }, 500);
-          console.log(newPlay)
         }, 3000)
       }, 1000)
     }
